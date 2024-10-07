@@ -1,6 +1,17 @@
-# Submission 2 Q1 - Alessandro Bastos S1535590
+#--------------------------------------------------------------------------
+#
+# Script Name: Submission2Q11535590.rb
+# Version:     1.0
+# Author:      Alessandro Bastos
+# Date:        September 2024
+#
+# Description: Ruby program that enables users to search for specific SSNs in
+#              .docx documents within a specified directory and its sub-dir.
+#              The program then generate a new .docx file named result.docx that
+#              compiles the found dates along with their corresponding doc names.
+#
+#--------------------------------------------------------------------------
 
-require 'search_in_file'
 require 'docx'
 
 class SubmissionTwo
@@ -93,4 +104,3 @@ ssn_checker.scan_dir(user_input)
 ssn_checker.create_txt
 
 # C:/testRuby
-# C:/Users/User/OneDrive - Melbourne Polytechnic/BIT246 Obj Orien RAD/Workspace/BIT246/Assignment_part2_alessandro

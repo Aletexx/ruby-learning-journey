@@ -1,4 +1,4 @@
-# Question 1 - Alessandro Bastos S1535590
+# Question 1 - Alessandro Bastos
 
  file_path = "Assignment_alessandro/Story1535590.txt" # variable to store file
 

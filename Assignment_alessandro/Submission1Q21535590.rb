@@ -1,4 +1,4 @@
-# Question 2 - Alessandro Bastos S1535590
+# Question 2 - Alessandro Bastos
 
 puts "Please type below the path and name of a folder "
 puts '(example: C:\Users\Workspace\BIT246\FolderName)'
@@ -17,7 +17,3 @@ if File.exist?(folder15355590) then
 else
   puts 'Sorry, Alessandro - error1535590 folder doesnt exist'
 end
-
-# require 'search_in_file'
-# results = SearchInFile.search( 'C:\Users\Workspace\BIT246\Assignment_alessandro\Story1535590.txt', 'multiple' )
-# puts results
