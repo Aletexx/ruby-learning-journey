@@ -1,0 +1,43 @@
+<!-- app/views/static_pages/search.html.erb -->
+<body>
+<h1 id="pageTitle">SSN in Docx Checker</h1>
+
+<div class="my_form">
+  <%= form_with url: upload_path, method: :post, local: true, multipart: true do |form| %>
+    <div class="my_border">
+      <% if @results.present? %>
+        <ul>
+          <% @results.each do |file_path, ssn| %>
+            <li> <%= file_path %></li>
+                <textarea readonly> <%= ssn %> </textarea>
+
+          <% end %>
+        </ul>
+      <% elsif params[:directory].present? %>
+        <p>No SSNs found in the specified directory.</p>
+        <p>Click on the "Choose File" button to upload a file or photo:</p>
+        <%= form.hidden_field :directory, value: params[:directory] %>
+        <%= form.file_field :file, id: "myFile" %>
+        <%= form.submit "Upload", class: "button", id: "buttonUpload" %>
+      <% end %>
+        <br>
+      <%= link_to"Back", {:action => 'home'} %>
+    </div>
+  <% end %>
+
+</div>
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const textareas = document.querySelectorAll('textarea');
+
+        textareas.forEach(textarea => {
+            // Reset the height to auto to calculate the new height properly
+            textarea.style.height = 'auto';
+            // Set the height based on the scrollHeight to match the content
+            textarea.style.height = (textarea.scrollHeight) + 'px';
+        });
+    });
+
+</script>

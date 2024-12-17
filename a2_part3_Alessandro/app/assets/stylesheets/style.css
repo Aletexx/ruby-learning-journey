@@ -1,0 +1,144 @@
+@charset "ISO-8859-1";
+
+#pageTitle {
+    color: #3d7003;
+}
+
+textarea {
+    font-size: 1.0rem;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 97%;
+    box-sizing: border-box; /* Ensures the padding and border are included in the width */
+    resize: none; /* Disable manual resizing */
+    overflow: hidden; /* Hide the scrollbar */
+}
+
+/* Input container*/
+
+body {
+    margin: 0;
+    font-family: arial;
+
+}
+
+.block_labels {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+#head {
+    text-align: center;
+}
+
+/* form {
+    background-color: rgb(37, 182, 201);
+
+} */
+.my_form {
+    background-color: rgb(4, 43, 2);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+input {
+    font-size: 1.5rem;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 97%;
+}
+
+#POR {
+    text-align: center;
+}
+
+
+#button {
+    display: block;
+    padding: 12px;
+    font-size: 14px;
+    width: 100%;
+    background-color: rgb(10, 223, 129);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#buttonReg {
+    display: block;
+    padding: 12px;
+    font-size: 14px;
+    width: 100%;
+    background-color: rgb(7, 159, 1);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+#buttonReg:hover  {
+    background-color: rgb(18, 73, 2);
+
+}
+
+#button:hover  {
+    background-color: rgb(6, 151, 73);
+
+}
+
+#buttonUpload {
+    display: block;
+    padding: 12px;
+    font-size: 14px;
+    width: 100%;
+    background-color: rgb(165, 195, 198);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#buttonUpload:hover{
+    display: block;
+    padding: 12px;
+    font-size: 14px;
+    width: 100%;
+    background-color: rgb(83, 83, 82);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#myFile {
+
+}
+
+#homePage {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.my_border {
+    border: 1px solid rgb(244, 244, 244);
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: 10px 10px 35px black;
+    background-color: rgb(163, 162, 156);
+}
+
+#keepLogin {
+    text-align: center;
+}
+
