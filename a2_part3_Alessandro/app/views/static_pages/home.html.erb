@@ -1,0 +1,20 @@
+<body>
+<h1 id="pageTitle">SSN in .docx Checker</h1>
+
+<div class="my_form">
+  <%= form_with url: search_path, method: :get, local: true do |form| %>
+    <div class="my_border">
+      <p>
+        <label for="user" class="block_labels" id="head"> <b>Enter root directory</b></label>
+        <br>
+        <%= form.text_field :directory, placeholder: "C:/YourPath" %>
+      </p>
+      <br>
+      <%= form.submit "Search", class: "button", id: "buttonReg" %>
+      <br>
+
+    </div>
+  <% end %>
+</div>
+</body>
+
